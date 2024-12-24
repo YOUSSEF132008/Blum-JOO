@@ -1,3 +1,14 @@
+import os
+from os import system as ss
+ll = 'pip install'
+try:
+	from cfonts import render
+except ModuleNotFoundError:
+	ss(ll+' python-cfonts')
+try:
+    import requests
+except ModuleNotFoundError:
+    os.system("pip install requests")
 import argparse
 import random
 from urllib.parse import parse_qs, unquote
